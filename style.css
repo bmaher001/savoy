@@ -330,16 +330,21 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	border-style:solid;
 	border-color:var(--swatch-var-6037)!important;
 	width:33%;
+	font-family:"Lato";
+	font-weight:700;
 }
 .btn-style1:hover{
 	color:var(--swatch-var-5465)!important;
 	background-color:var(--swatch-var-6037);
 }
+.main{
+	position:relative;
+}
 .footer{
-	position:absolute;
+	width:100%;
+	position:fixed;
 	left:0px;
-	right:0px;
-	bottom:0px;
+	bottom:01px;
 }
 
 /* = Colour
@@ -466,6 +471,22 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		background-color:var(--swatch-var-6037);
 		color:var(--swatch-var-5465)!important;
 	}
+	.footer{
+		left:0px;
+		position:fixed;
+		bottom:0px;
+		width:100%;
+	}
+	
+}
+
+@media (max-width: 767px){
+	.footer{
+		width:100%;
+		position:fixed;
+		left:0px;
+		bottom:0px;
+	}
 	
 }
 
@@ -484,12 +505,18 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		border-width:1px 1px 1px 1px;
 		border-radius:7px 7px 7px 7px;
 		width:50%;
+		font-family:"Lato";
+		font-weight:700;
+	}
+	.container{
+		position:relative;
+		height:auto;
 	}
 	.footer{
-		position:absolute;
+		position:fixed;
 		left:0px;
-		right:0px;
 		bottom:0px;
+		width:100%;
 	}
 	
 }
